@@ -11,6 +11,7 @@ Claude Skills and agents built from our delivery and pre-sales work.
 | `incident-rca` | Root cause analysis for a production incident |
 | `project-handover-brief` | HANDOVER.md + CLAUDE.md for a project or POC |
 | `nanostuffs-code-review` | Code review against our React / React Native / Node.js standards |
+| `env-config-impact` | Whether an env var, API key, Salesforce URL, CORS origin, or credential hits Node, Vite, Heroku, or both |
 
 ## Use the skills
 
