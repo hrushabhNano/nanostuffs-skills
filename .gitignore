@@ -1,0 +1,3 @@
+node_modules/
+# Generated status updates may contain client details
+status/
