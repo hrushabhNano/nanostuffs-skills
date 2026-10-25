@@ -11,6 +11,7 @@ Claude Skills and agents built from our delivery and pre-sales work.
 | `incident-rca` | Root cause analysis for a production incident |
 | `project-handover-brief` | HANDOVER.md + CLAUDE.md for a project or POC |
 | `nanostuffs-code-review` | Code review against our React / React Native / Node.js standards |
+| `client-status-update` | Weekly / sprint client status email or report from git history, tickets or notes |
 
 ## Use the skills
 
@@ -29,6 +30,16 @@ npm run research -- "Company Name"
 ```
 
 The brief is written to `briefs/<company>.md`.
+
+## Run the status update agent
+
+```bash
+npm install
+export ANTHROPIC_API_KEY=sk-ant-...
+npm run status -- <path-to-project-repo> [days]   # days defaults to 7
+```
+
+The agent reads the repo's git history for the period and writes a client status email to `status/<project>-<date>.md`. Fill in anything marked "to confirm" before sending. `status/` is gitignored because updates can contain client details.
 
 ## Add a skill
 
